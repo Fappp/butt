@@ -26,9 +26,7 @@ function makeFart()
 bot.on('ready', function() {
     console.log("it's butt time");
     bot.on('disconnected', function() {
-        setTimeout(function() {
-            bot.connect();
-        }, 5000);
+        setTimeout(() => bot.connect, 5000);
     });
 });
 
